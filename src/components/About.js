@@ -73,7 +73,10 @@ const About = () => {
         </div>
 
         <div className="cv-downloader">
-          <a href="./public/documents/Hassan-Ismail.pdf" download>
+          <a
+            href="https://raw.githubusercontent.com/hassanismail11/hassanismail11.github.io/main/public/documents/Hassan-Ismail.pdf"
+            download
+          >
             <div className="column contact-box service section-title">
               <div className="service-content">
                 <h3>Donwload Full CV</h3>

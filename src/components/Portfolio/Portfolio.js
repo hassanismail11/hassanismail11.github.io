@@ -77,7 +77,8 @@ const Portfolio = () => {
         <div className="portfolio-items">
           {categoryData.map((d, index) => (
             <div className="portfolio-item" key={index}>
-              <img src={d.img} alt={d.title} />
+              <img className="portfolio-item-image" src={d.img} alt={d.title} />
+              <h3 className="portfolio-item-title">{d.title}</h3>
             </div>
           ))}
         </div>

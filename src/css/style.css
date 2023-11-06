@@ -574,15 +574,39 @@ section {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 2rem;
+  justify-content: center
 }
 
 .portfolio-item {
+  flex-basis: 350px;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 300px;
   flex: 1 0 300px;
   border-radius: 6px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.portfolio-item-image{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.portfolio-item-title{
+  display: none;
+  height: 30px;
+  width: 100%;
+  margin-top: -37px;
+  text-align: center;
+  background-color: rgba(19, 20, 22, 0.8);
+  z-index: 2;
+  position: relative;
+  color: #b2bec3;
+}
+
+.portfolio-item-image:hover + .portfolio-item-title{
+  display: block;
 }
 
 .service {

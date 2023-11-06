@@ -1,7 +1,4 @@
 const Contact = () => {
-  const formSubmitHandler = (event) => {
-    event.preventDefault();
-  };
   return (
     <div id="contact" className="section dark1">
       <div className="container contact">
@@ -16,62 +13,69 @@ const Contact = () => {
           </p>
         </div>
         <div>
-          <ul className="social-icons">
-            <li>
-              <a
-                href="https://www.facebook.com/hassanismail11"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/hassanismail111"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/hassanismail11/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/hassanismail11"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-github"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/hassanismail11/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://wa.me/201149949175"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <i className="bi bi-whatsapp"></i>
-              </a>
-            </li>
-          </ul>
+          <div>
+            <ul className="social-icons">
+              <li>
+                <a
+                  href="https://www.facebook.com/hassanismail11"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/hassanismail111"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/hassanismail11/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul className="social-icons">
+              <li>
+                <a
+                  href="https://github.com/hassanismail11"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/hassanismail11/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/201149949175"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bi bi-whatsapp"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="columns">
           <div className="column contact-box service">
@@ -95,8 +99,24 @@ const Contact = () => {
         </div>
 
         <div>
-          <form className="contact-form" onSubmit={formSubmitHandler}>
-            <input type="text" id="name" name="name" placeholder="Your name" />
+          <form
+            className="contact-form"
+            action="https://formsubmit.io/send/hihassanismail11@gmail.com"
+            method="POST"
+          >
+            <input
+              name="_redirect"
+              type="hidden"
+              id="name"
+              value="https://hassanismail11.github.io/"
+            ></input>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
             <input
               type="text"
               id="phone"
@@ -108,12 +128,14 @@ const Contact = () => {
               id="email"
               name="email"
               placeholder="Your email"
+              required
             />
             <textarea
               rows="5"
               id="message"
               name="message"
               placeholder="Your message"
+              required
             />
             <button type="submit" className="button">
               Send Message

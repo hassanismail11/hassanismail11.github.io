@@ -53,7 +53,10 @@ const Intro = () => {
       <div className="container">
         <div className="section-flex intro">
           <div className="section-left">
-            <img src="/images/intro.svg" alt="intro" />
+            <img
+              src="https://raw.githubusercontent.com/hassanismail11/hassanismail11.github.io/main/public/images/intro.svg"
+              alt="intro"
+            />
           </div>
           <div className="section-right">
             <h3 className="color-white">HI!</h3>
