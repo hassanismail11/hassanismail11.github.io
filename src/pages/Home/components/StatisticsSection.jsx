@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { getAssetPath } from "../../../utils/paths";
 
 function StatisticsSection() {
   const { t, i18n } = useTranslation();
@@ -70,11 +69,6 @@ function StatisticsSection() {
           </div>
         </div>
       </div>
-      <img
-        src={getAssetPath("img/layout/black-bg-bottom.svg")}
-        alt=""
-        className="w-full h-full object-cover -mt-1 opacity-90"
-      />
     </section>
   );
 }
