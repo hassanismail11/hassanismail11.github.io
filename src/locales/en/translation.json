@@ -1,0 +1,98 @@
+{
+  "seo": {
+    "title": "Flik Techs — Software & Technology Solutions",
+    "description": "Flik Techs is a technology company building reliable products, integrations, and digital experiences—your tech with just a Flik of a button.",
+    "keywords": "Flik Techs, technology company, software development, IT solutions, digital products, integrations"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "switch-lang": "عربية",
+    "theme": "Theme",
+    "themeLight": "Switch to light mode",
+    "themeDark": "Switch to dark mode"
+  },
+  "tagline": {
+    "p1": "Your Tech with just a",
+    "p2": "Flik",
+    "p3": "of a button."
+  },
+  "hero": {
+    "tagline": "Your Tech with just a \"Flik\" of a button."
+  },
+  "home": {
+    "who": {
+      "p1": {
+        "bold": "Built for speed and clarity.",
+        "text": "We help teams ship modern software, automate workflows, and launch products that feel effortless to use—from first prototype to production."
+      },
+      "p2": {
+        "bold": "Engineering you can trust.",
+        "text": "Our engineers focus on maintainable architecture, observability, and security so your systems stay fast and dependable as you scale."
+      },
+      "p3": {
+        "bold": "Partners, not vendors.",
+        "text": "We work alongside your team with transparent communication, pragmatic roadmaps, and delivery that matches your business priorities—not ours."
+      }
+    },
+    "experts": {
+      "title": "What we do"
+    },
+    "stats": {
+      "years": "Years delivering tech",
+      "professionals": "Specialists on deck",
+      "projects": "Shipped initiatives"
+    },
+    "partners": {
+      "title-1": "Trusted",
+      "title-2": "by teams"
+    }
+  },
+  "contact": {
+    "contact-us": "Contact Us",
+    "info": {
+      "desc": "Tell us about your product, platform, or integration goals—we will respond with next steps and a sensible timeline."
+    },
+    "details": {
+      "title": "Get in touch",
+      "subtitle": "Reach us by email or phone—we usually respond within one business day.",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone"
+    },
+    "why-us": {
+      "title": "Why Flik Techs",
+      "desc": "We bring senior-level engineering, thoughtful UX, and a bias for shipping. From discovery to deployment, we keep momentum high and surprises low.",
+      "accent": "Ready when you are."
+    }
+  },
+  "services": {
+    "product-design": "Product design",
+    "cloud-infrastructure": "Cloud & infrastructure",
+    "data-apis": "Data & APIs",
+    "custom-software": "Custom software",
+    "devops-reliability": "DevOps & reliability",
+    "mobile-apps": "Mobile apps",
+    "security-compliance": "Security & compliance",
+    "strategy-architecture": "Strategy & architecture"
+  },
+  "footer": {
+    "contact-us": "Contact Us",
+    "location": "Remote-first · Worldwide",
+    "email": "info@fliktechs.com",
+    "phone": "+20 114 994 9175",
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "© 2026"
+  },
+  "notFound": {
+    "seoTitle": "Page not found — Flik Techs",
+    "title": "Page not found",
+    "message": "The link may be broken or the page may have been removed.",
+    "backHome": "Back to home",
+    "contact": "Contact us"
+  }
+}

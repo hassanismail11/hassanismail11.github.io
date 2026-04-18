@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Light brand surface */
+.textured-paper {
+  background-color: #e8f9f6;
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(8, 69, 57, 0.04) 2px,
+      rgba(8, 69, 57, 0.04) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(8, 69, 57, 0.04) 2px,
+      rgba(8, 69, 57, 0.04) 4px
+    );
+  position: relative;
+}
+
+.textured-paper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(22, 197, 162, 0.12) 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+.font-body {
+  line-height: 1.65;
+}
+
+.dark .textured-paper {
+  /* background-color: #0c1815; */
+  background-color: #000000;
+  background-image: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(22, 197, 162, 0.06) 2px,
+      rgba(22, 197, 162, 0.06) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(22, 197, 162, 0.06) 2px,
+      rgba(22, 197, 162, 0.06) 4px
+    );
+}
+
+.dark .textured-paper::before {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(22, 197, 162, 0.18) 1px,
+    transparent 0
+  );
+}
