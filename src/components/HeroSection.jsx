@@ -8,7 +8,11 @@ const BANNER_FILES = {
   "home-hero": "img/hero.jpg",
 };
 
-function HeroSection({ banners = ["home-hero"] }) {
+function HeroSection({
+  banners = ["home-hero"],
+  minHeight = "80vh",
+  showCTA = true,
+}) {
   const { t, i18n } = useTranslation();
   const key = banners[0] || "home-hero";
   const candidate = BANNER_FILES[key] || BANNER_FILES["home-hero"];
@@ -18,7 +22,7 @@ function HeroSection({ banners = ["home-hero"] }) {
 
   return (
     <section
-      className="relative flex min-h-[70vh] w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-transparent to-flik-light pb-24 pt-28 dark:from-transparent dark:to-zinc-950 md:min-h-[78vh] md:pb-32"
+      className={`relative flex min-h-[${minHeight}] w-full flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-transparent to-flik-light pb-24 pt-28 dark:from-transparent dark:to-zinc-950 md:pb-32`}
       aria-label={t("hero.tagline")}
     >
       {showImage && (
@@ -49,15 +53,17 @@ function HeroSection({ banners = ["home-hero"] }) {
           {t("tagline.p3")}
         </h1>
 
-        <Link
-          to={getPath("/contact")}
-          className={`bg-flik text-flik-darker dark:text-white px-4 py-2 my-4 rounded-md text-lg font-semibold ${
-            isAr ? "font-arabic" : "font-exo2"
-          }`}
-          data-aos-delay="100"
-        >
-          {t("contact.contact-us")}
-        </Link>
+        {showCTA && (
+          <Link
+            to={getPath("/contact")}
+            className={`bg-flik text-flik-darker dark:text-white px-4 py-2 my-4 rounded-md text-lg font-semibold ${
+              isAr ? "font-arabic" : "font-exo2"
+            }`}
+            data-aos-delay="100"
+          >
+            {t("contact.contact-us")}
+          </Link>
+        )}
       </div>
     </section>
   );

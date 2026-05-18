@@ -24,8 +24,7 @@ function SEO({ title, description, keywords, image, type = "website" }) {
   const arUrl = `${siteUrl}${baseUrlWithoutSlash}${arPath}`;
 
   const defaultTitle =
-    t("seo.title") ||
-    "Flik Techs — Software & Technology Solutions";
+    t("seo.title") || "Flik Techs — Software & Technology Solutions";
   const defaultDescription =
     t("seo.description") ||
     "Flik Techs is a technology company building reliable products and digital experiences.";
@@ -37,7 +36,7 @@ function SEO({ title, description, keywords, image, type = "website" }) {
     ? image.startsWith("http")
       ? image
       : `${siteUrl}${baseUrl}${image.replace(/^\//, "")}`
-    : `${siteUrl}${baseUrl}logo/icon.svg`;
+    : `${siteUrl}${baseUrl}img/card.png`;
 
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
@@ -46,8 +45,8 @@ function SEO({ title, description, keywords, image, type = "website" }) {
     image && image.startsWith("http")
       ? image
       : image
-        ? `${siteUrl}${baseUrl}${image.replace(/^\//, "")}`
-        : defaultImage;
+      ? `${siteUrl}${baseUrl}${image.replace(/^\//, "")}`
+      : defaultImage;
 
   useEffect(() => {
     document.title = pageTitle;

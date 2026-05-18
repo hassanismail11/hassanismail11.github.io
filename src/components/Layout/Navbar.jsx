@@ -70,12 +70,18 @@ function Navbar() {
                 {t("nav.home")}
               </Link>
 
-              <a href={`${getPath("/")}#about`} className={linkClass(false)}>
+              <Link
+                to={`${getPath("/")}#about`}
+                className={linkClass(false)}
+              >
                 {t("nav.about")}
-              </a>
-              <a href={`${getPath("/")}#services`} className={linkClass(false)}>
+              </Link>
+              <Link
+                to={`${getPath("/")}#services`}
+                className={linkClass(false)}
+              >
                 {t("nav.services")}
-              </a>
+              </Link>
               <Link
                 to={getPath("/contact")}
                 className={linkClass(isActive("/contact"))}
@@ -202,15 +208,15 @@ function Navbar() {
             >
               {t("nav.about")}
             </Link>
-            <a
-              href={`${getPath("/")}#services`}
+            <Link
+              to={`${getPath("/")}#services`}
               onClick={handleNavClick}
               className={`border-b border-white/10 py-3 text-lg font-medium transition-colors ${linkClass(
                 false
               )}`}
             >
               {t("nav.services")}
-            </a>
+            </Link>
             <Link
               to={getPath("/contact")}
               onClick={handleNavClick}

@@ -6,7 +6,7 @@ import WhyUsSection from "./components/WhyUs";
 function Contact() {
   return (
     <div className="w-full relative flex flex-col overflow-hidden">
-      <HeroSection banners={["contact-us"]} />
+      <HeroSection banners={["contact-us"]} minHeight="50vh" showCTA={false} />
       <InfoSection />
       <ContactDetails />
       <WhyUsSection />

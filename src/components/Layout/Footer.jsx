@@ -11,10 +11,7 @@ import { Link } from "react-router-dom";
 // import { FaXTwitter } from "react-icons/fa6";
 import { useLocalizedNavigation } from "../../hooks/useLocalizedNavigation";
 import { getAssetPath } from "../../utils/paths";
-import {
-  CONTACT_MAILTO,
-  CONTACT_PHONE_TEL,
-} from "../../constants/contact";
+import { CONTACT_MAILTO, CONTACT_PHONE_TEL } from "../../constants/contact";
 
 function Footer() {
   const { t, i18n } = useTranslation();

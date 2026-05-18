@@ -47,11 +47,19 @@ function AppContent() {
   }, [i18n.language]);
 
   useEffect(() => {
-    // Scroll to top on route change
-    window.scrollTo(0, 0);
-    // Refresh AOS on route change
+    if (location.hash) {
+      const id = location.hash.replace(/^#/, "");
+      requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    } else {
+      window.scrollTo(0, 0);
+    }
     AOS.refresh();
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 
   return (
     <LanguageRoute>
